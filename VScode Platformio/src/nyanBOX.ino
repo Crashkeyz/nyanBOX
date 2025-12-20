@@ -24,6 +24,7 @@
 #include "../include/scanner.h"
 #include "../include/analyzer.h"
 #include "../include/sourapple.h"
+#include "../include/sourdroid.h"
 #include "../include/blescan.h"
 #include "../include/ble_spammer.h"
 #include "../include/ble_spoofer.h"
@@ -217,6 +218,7 @@ bool isOffensiveApp(const char* appName) {
          strstr(appName, "Spam") != nullptr ||
          strstr(appName, "Swift Pair") != nullptr ||
          strstr(appName, "Sour Apple") != nullptr ||
+         strstr(appName, "Sour Droid") != nullptr ||
          strstr(appName, "Spoofer") != nullptr ||
          strstr(appName, "Evil Portal") != nullptr;
 }
@@ -442,6 +444,7 @@ MenuItem bleMenu[] = {
   { "BLE Spammer",  nullptr, bleSpamSetup,             bleSpamLoop,             cleanupBLE },
   { "Swift Pair",   nullptr, swiftpairSpamSetup,       swiftpairSpamLoop,       cleanupBLE },
   { "Sour Apple",   nullptr, sourappleSetup,           sourappleLoop,           cleanupBLE },
+  { "Sour Droid",    nullptr, sourDroidSetup,          sourDroidLoop,          cleanupBLE },
   { "BLE Spoofer",  nullptr, bleSpooferSetup,          bleSpooferLoop,          cleanupBLE },
   { "Back",         nullptr, nullptr,                  nullptr,                 noCleanup }
 };

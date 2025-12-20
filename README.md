@@ -84,6 +84,7 @@ Built around an ESP32 with triple NRF24 modules, a crisp OLED display, and a 250
 - **BLE Spammer** – Broadcasts BLE advertisement packets for testing
 - **Swift Pair** - Triggers Windows Swift Pair notifications by broadcasting fake Microsoft device advertisements.
 - **Sour Apple** – Mimics Apple Bluetooth signals like AirPods pairing pop-up to test device resilience against protocol exploits.
+- **Sour Droid** – Floods nearby Android and Samsung devices with Google FastPair and Samsung EasySetup pairing notifications by cycling through hundreds of device models to test protocol resilience.
 - **BLE Spoofer** – Clones and rebroadcasts detected BLE devices with complete 1:1 replication of MAC address, name, advertising data, scan response, and connectable state.
 
 ### 📡 Signal & Protocol Tools
@@ -220,6 +221,7 @@ Love nyanBOX? Here's how you can help:
 - [ESP32-Sour-Apple](https://github.com/RapierXbox/ESP32-Sour-Apple)
 - [PwnGridSpam](https://github.com/7h30th3r0n3/PwnGridSpam)
 - [ESP32-AirTag-Scanner](https://github.com/MatthewKuKanich/ESP32-AirTag-Scanner)
+- [BLE Spam Flipper Application](https://github.com/Next-Flip/Momentum-Apps/tree/c470da2d792fc8c4f165ae2906d79250c33a823c/ble_spam)
 - [ESP Web Tools](https://esphome.github.io/esp-web-tools/)
 - [Flock You](https://github.com/colonelpanichacks/flock-you)
 - [Original nRFBOX Project](https://github.com/cifertech/nrfbox)
