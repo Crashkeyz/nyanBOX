@@ -91,7 +91,7 @@ Built around an ESP32 with triple NRF24 modules, a crisp OLED display, and a 250
 - **Drone Detector** – Detects nearby drones broadcasting RemoteID via WiFi and BLE. Displays drone identification, GPS location, altitude, speed, operator information, and flight status. Features a locate mode with real-time RSSI signal strength meter to help pinpoint drone positions.
 - **Flock Detector** - Detects Flock Safety surveillance cameras using dual-mode WiFi and BLE scanning. Identifies devices through SSID patterns, MAC OUI prefixes, and Bluetooth device names. Features real-time signal strength tracking with detailed device info and a locate mode for pinpointing camera positions.
 - **Scanner** – Scans the 2.4GHz frequency band to detect active channels and devices
-- **Analyzer** – Analyzes detected signals and provides detailed activity information
+- **Analyzer** – Real-time spectrum analyzer with channel filters for targeted RF analysis. Features dynamic display with auto-scaling, peak frequency detection, and instant filter switching via left/right buttons. Analyze WiFi, Bluetooth, or custom frequency bands.
 
 ### 🎮 Leveling System
 nyanBOX features a built-in RPG-style leveling system that tracks your usage throughout using the device:
