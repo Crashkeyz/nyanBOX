@@ -141,6 +141,30 @@ Get up and running or update to the latest features:
 3. Click **Install nyanBOX Firmware**
 4. Done!
 
+#### Flipper Zero – ESP Flasher App
+Flash nyanBOX wirelessly using a Flipper Zero with the ESP Flasher app:
+
+1. Install the **ESP Flasher** app on your Flipper Zero (available in the Flipper App Store / Lab.Flipper.net)
+2. Download the latest firmware files from [**firmware-files/**](firmware-files/) in this repo:
+   - `bootloader.bin`
+   - `partitions.bin`
+   - `firmware.bin`
+3. Copy the three `.bin` files to your Flipper Zero SD card at `apps_data/esp_flasher/`
+4. Wire your Flipper Zero to the nyanBOX UART debug pads:
+
+   | Flipper Zero | nyanBOX |
+   |:---:|:---:|
+   | TX (pin 13) | RX |
+   | RX (pin 14) | TX |
+   | GND | GND |
+
+5. Hold the **BOOT** button on nyanBOX, then press **RESET** (or power cycle) to enter bootloader mode
+6. Open **Apps → GPIO → ESP Flasher** on the Flipper Zero
+7. Select **Flash .bin** and choose `firmware.bin` (the app will auto-detect the other required files)
+8. Wait for the flash to complete, then press **RESET** on nyanBOX to reboot into the new firmware
+
+> **Tip:** If the flash fails, double-check your TX/RX wiring (swap if needed) and ensure nyanBOX is in bootloader mode before starting.
+
 #### Advanced - PlatformIO
 For developers who want to build from source or customize the firmware:
 
