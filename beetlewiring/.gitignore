@@ -1,0 +1,15 @@
+# Add local.properties for Android SDK path (machine-specific, not committed)
+local.properties
+
+# Gradle build outputs
+.gradle/
+build/
+app/build/
+
+# Android Studio files
+.idea/
+*.iml
+
+# Signing config
+*.jks
+*.keystore
